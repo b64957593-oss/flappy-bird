@@ -1,33 +1,79 @@
-🐦 Flappy Bird AI with NEAT
+<img width="1418" height="887" alt="image" src="https://github.com/user-attachments/assets/4b10456b-8cf1-41cf-b775-66dcefe1bd3e" />
+# 🐦 Flappy Bird AI using NEAT
 
-A Flappy Bird game where the birds learn to play by themselves. Instead of coding the rules, the project uses NEAT (NeuroEvolution of Augmenting Topologies) to evolve neural networks over many generations until a bird can fly through the pipes without crashing.
+![Flappy Bird Banner](assets/flappy-bird-banner.png)
 
-Built with Python, Pygame and NEAT-Python.
+A classic Flappy Bird game powered by **NEAT (NeuroEvolution of Augmenting Topologies)**, where an AI learns to play the game by evolving neural networks over multiple generations.
 
-🧠 How It Works
-A population of birds is created, each controlled by its own small neural network.
-Every frame, the network looks at the game and decides: flap or don't flap.
-Birds earn fitness for surviving and passing pipes. Crashed birds are removed.
-The best networks are mixed and mutated to create the next generation.
-This repeats until a bird reaches the target score.
+## 🎮 Gameplay Preview
 
-Network inputs and output
+![Flappy Bird Gameplay](assets/gameplay-preview.png)
 
-Type	Value
-Input	Bird's Y position
-Input	Distance to the top of the next pipe opening
-Input	Distance to the bottom of the next pipe opening
-Output	Flap if the value is greater than 0.5 (tanh)
-🛠 Installation
+## ✨ Features
 
-Requires Python 3.8+.
+- 🐤 Classic Flappy Bird gameplay
+- 🤖 AI-powered gameplay using NEAT
+- 🧠 Neural networks evolve over generations
+- 📈 Fitness tracking to measure AI performance
+- 🎨 Simple and colorful 2D graphics
 
-bash
-git clone https://github.com/<your-username>/flappy-bird-neat.git
-cd flappy-bird-neat
+## 🛠️ Tech Stack
+
+- **Python** — Core programming language
+- **Pygame** — Game development and graphics
+- **NEAT-Python** — AI training and evolution
+
+## ⚙️ Installation
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+cd YOUR-REPOSITORY
+```
+
+**2. Install dependencies**
+
+```bash
 pip install pygame neat-python
-▶️ Usage
-bash
-python main.py
+```
 
-A window opens and the birds start training. Watch the generation counter go up as they improve. Press Esc to quit.
+**3. Run the game**
+
+```bash
+python main.py
+```
+
+> Make sure your main Python file is named `main.py`, or replace it with your actual filename.
+
+## 🧠 How It Works
+
+1. The AI starts with a population of neural networks.
+2. Each network controls the bird during gameplay.
+3. The AI receives a fitness score based on its performance.
+4. Better-performing networks are selected and evolved.
+5. Over successive generations, the AI can learn to avoid pipes and survive longer.
+
+## 📁 Project Structure
+
+```text
+Flappy-Bird-AI/
+├── assets/
+│   ├── flappy-bird-banner.png
+│   └── gameplay-preview.png
+├── main.py
+├── neat_config.txt
+├── requirements.txt
+└── README.md
+```
+
+*Your actual filenames may differ.*
+
+## 🚀 Goal
+
+Explore how artificial intelligence and evolutionary algorithms can teach a computer to play a simple game.
+
+**Built with Python, NEAT, and a passion for AI! ❤️**
+
+---
+⭐ If you like this project, consider giving the repository a star!
